@@ -2751,6 +2751,7 @@ do
         TextSize = 14;
         TextXAlignment = Enum.TextXAlignment.Left;
         ZIndex = 203;
+        RichText = true
         Parent = InnerFrame;
     });
 
