@@ -2750,6 +2750,9 @@ do
         Size = UDim2.new(1, -4, 1, 0);
         TextSize = 14;
         TextXAlignment = Enum.TextXAlignment.Left;
+        TextYAlignment = Enum.TextXAlignment.Center;
+        TextScaled = false;
+        TextWrapped = false;
         ZIndex = 203;
         RichText = true;
         Parent = InnerFrame;
