@@ -2851,8 +2851,7 @@ function Library:Notify(Text, Time)
 
     local NotifyOuter = Library:Create('Frame', {
         BorderColor3 = Color3.new(0, 0, 0);
-        AnchorPoint = Vector2.new(0.5, 1);
-        Position = UDim2.new(0.5, 0, 1, -80);
+        Position = UDim2.new(0, 100, 0, 10);
         Size = UDim2.new(0, 0, 0, YSize);
         ClipsDescendants = true;
         ZIndex = 100;
