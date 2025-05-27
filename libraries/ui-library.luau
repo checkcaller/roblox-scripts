@@ -3041,6 +3041,7 @@ function Library:CreateWindow(...)
         Padding = UDim.new(0, Config.TabPadding);
         FillDirection = Enum.FillDirection.Horizontal;
         SortOrder = Enum.SortOrder.LayoutOrder;
+        HorizontalFlex = Enum.UIFlexAlignment.Fill;
         Parent = TabArea;
     });
 
