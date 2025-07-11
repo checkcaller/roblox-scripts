@@ -34,12 +34,13 @@ local Library = {
     FontColor = Color3.fromRGB(255, 255, 255),
     MainColor = Color3.fromRGB(35, 35, 35),
     BackgroundColor = Color3.fromRGB(25, 25, 25),
-    AccentColor = Color3.fromRGB(255, 182, 193),
+    AccentColor = Color3.fromRGB(255, 214, 0),
     OutlineColor = Color3.fromRGB(60, 60, 60),
     RiskColor = Color3.fromRGB(255, 60, 60),
 
     Black = Color3.new(0, 0, 0);
     Font = Enum.Font.SourceSansBold,
+    ShowCustomCursor = false,
 
     OpenedFrames = {};
     DependencyBoxes = {};
@@ -3559,7 +3560,7 @@ function Library:CreateWindow(...)
                 CursorOutline.Color = Color3.new(0, 0, 0);
                 CursorOutline.Visible = true;
 
-                while Toggled and ScreenGui.Parent do
+                while Toggled and ScreenGui.Parent and Library.ShowCustomCursor do
                     InputService.MouseIconEnabled = false;
 
                     local mPos = InputService:GetMouseLocation();
